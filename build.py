@@ -31,7 +31,7 @@ PROJECTS=[
    story=["For this family, the kitchen has always been more than a place to cook — it is the heart of the home, where everyone gathers. Her daughter dreamed of surprising her with a space that reflected all the warmth she pours into every meal.",
      "I began by studying how the room actually worked: the way morning light filled it, how the layout shaped her routines, and how the underused laundry room next door held real potential. While she was away for a month in Colombia, we opened the wall between the two rooms and introduced a generous island with plenty of storage.",
      "She came home to a kitchen that was brighter, more open, and more functional — and to a reaction that was everything we'd hoped for. More than a renovation, it became a centerpiece that celebrates who she is."],
-   gallery=[("abue1_orig.jpg","After"),("abue2_orig.jpg","After"),("kitchen-before_orig.jpg","Before")]),
+   gallery=[("kitchen-before_orig.jpg","Before"),("abue1_orig.jpg","After"),("abue2_orig.jpg","After")]),
 
  dict(id="guest-bath", title="The Guest Bathroom",
    cat="Residential · Bathroom",
@@ -40,7 +40,7 @@ PROJECTS=[
    story=["This guest bathroom was a labor of love. The client wanted her guests to feel truly welcomed, but the existing shower was dated and uninviting.",
      "She trusted me with full creative direction — from selecting the tile to choosing the perfect shower door. I focused on a clean, elegant look that would feel both timeless and warm.",
      "The result is a complete transformation. The space now reflects her hospitality, and her guests agree."],
-   gallery=[("jb1_orig.jpg","After"),("jb2_orig.jpg","After"),("jb4_orig.jpg","After"),("bjb1_orig.jpg","Before"),("bjb3_orig.jpg","Before")]),
+   gallery=[("bjb1_orig.jpg","Before"),("bjb3_orig.jpg","Before"),("jb1_orig.jpg","After"),("jb2_orig.jpg","After"),("jb4_orig.jpg","After")]),
 
  dict(id="master-bath", title="Master Bathroom Renovation",
    cat="Residential · Bathroom",
@@ -50,7 +50,7 @@ PROJECTS=[
    story=["This primary bathroom updated an outdated 1980s space to match the elegance of the rest of the home. The vision was modern function paired with timeless style — calm, refined, and a little bit spa.",
      "Clean lines, quality finishes, and a soft neutral palette set a restful mood, while thoughtful layout changes improved the flow. Careful attention to fixtures, surfaces, and lighting tied it back to the rest of the residence.",
      "The result is a restorative retreat that feels cohesive with the home and the way the clients live."],
-   gallery=[("arc1_orig.png","After (rendering)"),("arc2_orig.png","After (rendering)"),("arc3_orig.png","After (rendering)"),("brc1_orig.jpg","Before"),("brc2_orig.jpg","Before"),("brc3_orig.jpg","Before")]),
+   gallery=[("brc1_orig.jpg","Before"),("brc2_orig.jpg","Before"),("brc3_orig.jpg","Before"),("arc1_orig.png","After (rendering)"),("arc2_orig.png","After (rendering)"),("arc3_orig.png","After (rendering)")]),
 
  dict(id="modern-warm", title="Modern Warmth in a Compact Home",
    cat="Residential · Whole Home",
@@ -59,9 +59,10 @@ PROJECTS=[
    story=["This apartment was a chance to create something fresh and deeply personal. The client wanted a clean slate — a home that felt cozy, stylish, and full of character.",
      "The biggest move was rethinking the kitchen layout. Removing a dividing wall opened up the main living area, improved the flow, and let natural light reach every corner. From there, a warm-but-modern palette and carefully chosen furniture layered in comfort without sacrificing style.",
      "The finished home feels elevated yet lived-in — a seamless blend of function and design that's unmistakably hers."],
-   gallery=[("0ffa019c-b69f-44e7-bd4f-cfbdf2d5c62e_1_orig.jpg","After"),("living-room-and-desk_1_orig.jpg","After"),
+   gallery=[("patio-before_1_orig.jpeg","Before"),("patio-after_1_orig.jpeg","After"),
+     ("0ffa019c-b69f-44e7-bd4f-cfbdf2d5c62e_1_orig.jpg","After"),("living-room-and-desk_1_orig.jpg","After"),
      ("bedroom-with-paintings_1_orig.jpg","After"),("finish-dining-room_1_orig.png","After"),
-     ("island-area_1_orig.png","After"),("patio-after_1_orig.jpeg","After"),("patio-before_1_orig.jpeg","Before")]),
+     ("island-area_1_orig.png","After")]),
 
  dict(id="new-beginnings", title="New Beginnings",
    cat="Residential · Apartment",
@@ -91,9 +92,9 @@ PROJECTS=[
    story=["As this growing company started attracting higher-profile clients, its lobby no longer matched the brand. First impressions were becoming more important than ever.",
      "The goal was a welcoming, modern space that signaled credibility and attention to detail — a refined layout, clean contemporary furniture, and subtle branding through color, artwork, and finishes. The refresh also extended to the bathroom and kitchenette so the whole office felt cohesive.",
      "The result is a polished, professional environment that sets the tone the moment a client walks through the door."],
-   gallery=[("img-0202_1_orig.jpeg","After"),("img-0203_1_orig.jpeg","After"),("img-0208_1_orig.jpeg","After"),
-     ("img-0600_1_orig.jpeg","After"),("img-0849_1_orig.jpeg","After"),("img-0938_1_orig.jpeg","After"),
-     ("img-9791_1_orig.jpeg","Before"),("img-9784_1_orig.jpeg","Before")]),
+   gallery=[("img-9791_1_orig.jpeg","Before"),("img-9784_1_orig.jpeg","Before"),
+     ("img-0202_1_orig.jpeg","After"),("img-0203_1_orig.jpeg","After"),("img-0208_1_orig.jpeg","After"),
+     ("img-0600_1_orig.jpeg","After"),("img-0849_1_orig.jpeg","After"),("img-0938_1_orig.jpeg","After")]),
 
  dict(id="the-office", title="The Office",
    cat="Commercial · Office",
@@ -102,9 +103,9 @@ PROJECTS=[
    story=["This fast-paced project called for a complete office refresh on a tight timeline and budget — a space that was highly functional and stylish, and that reflected the client's personality.",
      "The brief included added storage, a new desk, and a custom bar area, all within a palette inspired by the client's love of Ohio State. Smart sourcing, clean choices, and multifunctional pieces made it come together quickly without cutting corners.",
      "The finished office is sleek and well-organized — personal yet professional, delivered on time and on budget."],
-   gallery=[("img-0664_1_orig.jpeg","After"),("img-0841_1_orig.jpeg","After"),("img-0843_1_orig.jpeg","After"),
-     ("office-1_1_orig.jpg","After"),("office-2_1_orig.jpg","After"),("img-1876_1_orig.jpg","After"),
-     ("img-0130_1_orig.jpeg","Before"),("img-0131_1_orig.jpeg","Before")]),
+   gallery=[("img-0130_1_orig.jpeg","Before"),("img-0131_1_orig.jpeg","Before"),
+     ("img-0664_1_orig.jpeg","After"),("img-0841_1_orig.jpeg","After"),("img-0843_1_orig.jpeg","After"),
+     ("office-1_1_orig.jpg","After"),("office-2_1_orig.jpg","After"),("img-1876_1_orig.jpg","After")]),
 
  dict(id="asheville", title="Modern Functionality in Asheville",
    cat="Residential · Kitchen · Asheville, NC",
@@ -195,7 +196,7 @@ modals="\n".join(modal(p) for p in PROJECTS)
 HERO=reg("living-room-and-desk_1_orig.jpg","h")
 HERO2=reg("img-5401_orig.jpeg")
 PORTRAIT=reg("facetune_orig.png","q")
-ABOUT_IMG=reg("abue2_orig.jpg")
+ABOUT_IMG=reg("finish-dining-room_1_orig.png")
 import json as _json
 img_json=_json.dumps(IMG)
 
@@ -269,7 +270,7 @@ HTML = f'''<!doctype html>
   <section class="studio section" id="studio">
     <div class="wrap studio__grid">
       <div class="studio__media reveal">
-        <img class="studio__room" data-img="{ABOUT_IMG}" alt="Detail of a kitchen designed by Rocío">
+        <img class="studio__room" data-img="{ABOUT_IMG}" alt="A warm dining room designed by Rocío">
         <img class="studio__portrait" data-img="{PORTRAIT}" alt="Portrait of Rocío Fuhrmeister">
       </div>
       <div class="studio__copy reveal">
