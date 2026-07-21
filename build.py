@@ -120,9 +120,11 @@ PROJECTS=[
    story=["This kitchen renovation was about modernizing a dated space and making it work harder day to day — more storage, a smarter layout, and a warm, contemporary feel.",
      "We extended the kitchen for more usable space and added a built-in bench with hidden storage for seating and practicality. Reconfigured cabinetry maximized capacity while keeping clean lines, and a mix of closed storage and open shelving added flexibility and warmth. Natural wood tones paired with crisp, light finishes kept everything fresh and open.",
      "The kitchen now feels expansive and inviting — the true heart of the home, designed to elevate everyday living."],
-   gallery=[("img-5401_orig.jpeg","After"),("img-5396_orig.jpeg","After"),("img-5397_orig.jpeg","After"),
-     ("img-5398_orig.jpeg","After"),("img-5400_orig.jpeg","After"),("img-5403_orig.jpeg","After"),
-     ("img-5406_orig.jpeg","After"),("screenshot-2025-07-07-at-19-32-55_orig.jpeg","After")]),
+   gallery=[("screenshot-2025-07-07-at-19-32-55_orig.jpeg","Before"),("image-7-7-25-at-19-33_orig.jpg","Before"),
+     ("screenshot-2025-07-07-at-19-32-48_orig.jpeg","Before"),
+     ("img-5399_orig.jpeg","After"),("img-5398_orig.jpeg","After"),("img-5400_orig.jpeg","After"),
+     ("img-5397_orig.jpeg","After"),("img-5403_orig.jpeg","After"),("img-5396_orig.jpeg","After"),
+     ("img-5401_orig.jpeg","After"),("img-5406_orig.jpeg","After")]),
 ]
 
 IMG={}; _keys={}
