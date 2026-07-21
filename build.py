@@ -349,9 +349,9 @@ HTML = f'''<!doctype html>
         <h2 class="h-section">Let's create a space<br>that feels like you.</h2>
         <p>Tell me about your space and what you're dreaming up — I'll get back to you within a couple of days.</p>
         <ul class="contact__list">
-          <li><span>Email</span><a href="mailto:hello@rociofuhrmeister.com">hello@rociofuhrmeister.com</a></li>
+          <li><span>Email</span><a href="mailto:zurcfuhrmeister@gmail.com">zurcfuhrmeister@gmail.com</a></li>
           <li><span>Based in</span>North Carolina · available locally &amp; remotely</li>
-          <li><span>Instagram</span><a href="#" rel="noopener">@rociofuhrmeister</a></li>
+          <li><span>Phone</span><a href="tel:+19417801547">(941) 780-1547</a></li>
         </ul>
       </div>
       <form class="contact__form reveal" id="contactForm" novalidate>

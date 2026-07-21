@@ -112,7 +112,7 @@
     if(!name||!email||!msg){ note.textContent='Please add your name, email, and a note.'; return; }
     var subject=encodeURIComponent('Project inquiry — '+name+' ('+type+')');
     var body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nProject type: '+type+'\n\n'+msg);
-    window.location.href='mailto:hello@rociofuhrmeister.com?subject='+subject+'&body='+body;
-    note.textContent='Opening your email app… if nothing happens, email hello@rociofuhrmeister.com directly.';
+    window.location.href='mailto:zurcfuhrmeister@gmail.com?subject='+subject+'&body='+body;
+    note.textContent='Opening your email app… if nothing happens, email zurcfuhrmeister@gmail.com directly.';
   });
 })();
