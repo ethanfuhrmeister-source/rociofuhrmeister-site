@@ -209,7 +209,6 @@ cards="\n".join(card(p) for p in PROJECTS)
 modals="\n".join(modal(p) for p in PROJECTS)
 
 HERO=reg("img-5396_orig.jpeg","h")
-HERO2=reg("jb1_orig.jpg")
 PORTRAIT=reg("facetune_orig.png","q")
 ABOUT_IMG=reg("finish-dining-room_1_orig.png")
 import json as _json
@@ -271,9 +270,6 @@ HTML = f'''<!doctype html>
       </div>
       <div class="hero__media">
         <div class="hero__frame"><img data-img="{HERO}" alt="A bright kitchen and dining room designed by Rocío Fuhrmeister"></div>
-        <div class="hero__card">
-          <img data-img="{HERO2}" alt="An elegant guest bathroom designed by Rocío">
-        </div>
       </div>
     </div>
   </section>
