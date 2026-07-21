@@ -40,7 +40,7 @@ PROJECTS=[
    story=["This guest bathroom was a labor of love. The client wanted her guests to feel truly welcomed, but the existing shower was dated and uninviting.",
      "She trusted me with full creative direction — from selecting the tile to choosing the perfect shower door. I focused on a clean, elegant look that would feel both timeless and warm.",
      "The result is a complete transformation. The space now reflects her hospitality, and her guests agree."],
-   gallery=[("bjb1_orig.jpg","Before"),("bjb3_orig.jpg","Before"),("jb1_orig.jpg","After"),("jb2_orig.jpg","After"),("jb4_orig.jpg","After")]),
+   gallery=[("bjb1_orig.jpg","Before"),("bjb2_orig.jpg","Before"),("bjb3_orig.jpg","Before"),("jb1_orig.jpg","After"),("jb2_orig.jpg","After"),("jb4_orig.jpg","After")]),
 
  dict(id="master-bath", title="Master Bathroom Renovation",
    cat="Residential · Bathroom",
@@ -58,10 +58,12 @@ PROJECTS=[
    story=["This apartment was a chance to create something fresh and deeply personal. The client wanted a clean slate — a home that felt cozy, stylish, and full of character.",
      "The biggest move was rethinking the kitchen layout. Removing a dividing wall opened up the main living area, improved the flow, and let natural light reach every corner. From there, a warm-but-modern palette and carefully chosen furniture layered in comfort without sacrificing style.",
      "The finished home feels elevated yet lived-in — a seamless blend of function and design that's unmistakably hers."],
-   gallery=[("patio-before_1_orig.jpeg","Before"),("patio-after_1_orig.jpeg","After"),
-     ("0ffa019c-b69f-44e7-bd4f-cfbdf2d5c62e_1_orig.jpg","After"),("living-room-and-desk_1_orig.jpg","After"),
-     ("bedroom-with-paintings_1_orig.jpg","After"),("finish-dining-room_1_orig.png","After"),
-     ("island-area_1_orig.png","After")]),
+   gallery=[("patio-before_1_orig.jpeg","Before"),("screenshot-2023-06-28-at-9-40-17-pm_1_orig.jpeg","Before"),
+     ("whatsapp-image-2023-06-21-at-11-00-31-am-copy_1_orig.jpeg","Before"),("whatsapp-image-2023-06-21-at-11-00-32-am-copy_1_orig.jpeg","Before"),
+     ("whatsapp-image-2023-06-21-at-11-00-32-am_1_orig.jpeg","Before"),("whatsapp-image-2023-06-21-at-11-00-33-am_1_orig.jpeg","Before"),
+     ("patio-after_1_orig.jpeg","After"),("0ffa019c-b69f-44e7-bd4f-cfbdf2d5c62e_1_orig.jpg","After"),
+     ("living-room-and-desk_1_orig.jpg","After"),("bedroom-with-paintings_1_orig.jpg","After"),
+     ("finish-dining-room_1_orig.png","After"),("island-area_1_orig.png","After")]),
 
  dict(id="new-beginnings", title="New Beginnings",
    cat="Residential · Apartment",
@@ -206,8 +208,8 @@ def modal(p):
 cards="\n".join(card(p) for p in PROJECTS)
 modals="\n".join(modal(p) for p in PROJECTS)
 
-HERO=reg("living-room-and-desk_1_orig.jpg","h")
-HERO2=reg("img-5401_orig.jpeg")
+HERO=reg("img-5396_orig.jpeg","h")
+HERO2=reg("jb1_orig.jpg")
 PORTRAIT=reg("facetune_orig.png","q")
 ABOUT_IMG=reg("finish-dining-room_1_orig.png")
 import json as _json
@@ -268,9 +270,9 @@ HTML = f'''<!doctype html>
         <p class="hero__meta">Kitchens · Baths · Whole-home · Commercial</p>
       </div>
       <div class="hero__media">
-        <div class="hero__frame"><img data-img="{HERO}" alt="A warm, light-filled living room designed by Rocío Fuhrmeister"></div>
+        <div class="hero__frame"><img data-img="{HERO}" alt="A bright kitchen and dining room designed by Rocío Fuhrmeister"></div>
         <div class="hero__card">
-          <img data-img="{HERO2}" alt="A modern kitchen renovation">
+          <img data-img="{HERO2}" alt="An elegant guest bathroom designed by Rocío">
         </div>
       </div>
     </div>
