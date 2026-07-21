@@ -82,14 +82,14 @@ PROJECTS=[
    story=["This 45-square-meter (about 484 sq ft) apartment in Colombia showed just how much is possible in a small footprint. The client wanted a home that felt open and welcoming, with clever storage to make the most of every meter.",
      "The plan prioritized natural light, multifunctional furniture, and built-in storage — efficiency without giving up style. Careful layout and the right pieces made the apartment feel far larger than its square footage.",
      "The result proves that thoughtful design can make even the smallest spaces both beautiful and genuinely livable."],
-   gallery=[("01_orig.jpg","Before"),("02_orig.jpg","Before"),("03_orig.jpg","Before"),
-     ("04_orig.jpg","Before"),("05_orig.jpg","Before"),("06_orig.jpg","Before"),
-     ("07_orig.jpg","Before"),("08_orig.jpg","Before"),("09_orig.jpg","Before"),
-     ("10_orig.jpg","After"),("11_orig.jpg","After"),("12_orig.jpg","After"),
-     ("13_orig.jpg","After"),("14_orig.jpg","After"),("15_orig.jpg","After"),
-     ("17_orig.jpg","After"),("19_orig.jpeg","After"),("20_orig.jpeg","After"),
-     ("21_orig.jpeg","After"),("22_orig.jpeg","After"),("23_orig.jpeg","After"),
-     ("img-8615_orig.jpeg","After"),("img-8622_orig.jpeg","After"),("img-8623_orig.jpeg","After")]),
+   gallery=[("01_orig.jpg",None),("02_orig.jpg",None),("03_orig.jpg",None),
+     ("04_orig.jpg",None),("05_orig.jpg",None),("06_orig.jpg",None),
+     ("07_orig.jpg",None),("08_orig.jpg",None),("09_orig.jpg",None),
+     ("10_orig.jpg",None),("11_orig.jpg",None),("12_orig.jpg",None),
+     ("13_orig.jpg",None),("14_orig.jpg",None),("15_orig.jpg",None),
+     ("17_orig.jpg",None),("19_orig.jpeg",None),("20_orig.jpeg",None),
+     ("21_orig.jpeg",None),("22_orig.jpeg",None),("23_orig.jpeg",None),
+     ("img-8615_orig.jpeg",None),("img-8622_orig.jpeg",None),("img-8623_orig.jpeg",None)]),
 
  dict(id="corporate-lobby", title="Corporate Lobby Upgrade",
    cat="Commercial · Lobby & Office",
@@ -224,7 +224,7 @@ HTML = f'''<!doctype html>
 <style>{CSS}</style>
 </head>
 <body>
-<a class="skip" href="#work">Skip to work</a>
+<a class="skip" href="#work">Skip to gallery</a>
 
 <header class="nav" id="nav">
   <div class="wrap nav__row">
@@ -233,10 +233,8 @@ HTML = f'''<!doctype html>
       <span class="brand__txt"><b>Rocío Fuhrmeister</b><i>Interior Design</i></span>
     </a>
     <nav class="nav__links" aria-label="Primary">
-      <a href="#work">Work</a>
       <a href="#studio">Studio</a>
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
+      <a href="#work">Gallery</a>
       <a class="nav__cta" href="#contact">Get in touch</a>
     </nav>
     <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -244,8 +242,7 @@ HTML = f'''<!doctype html>
 </header>
 <div class="menu" id="menu" hidden>
   <nav aria-label="Mobile">
-    <a href="#work">Work</a><a href="#studio">Studio</a><a href="#services">Services</a>
-    <a href="#process">Process</a><a href="#contact">Get in touch</a>
+    <a href="#studio">Studio</a><a href="#work">Gallery</a><a href="#contact">Get in touch</a>
   </nav>
 </div>
 
@@ -258,7 +255,7 @@ HTML = f'''<!doctype html>
         <h1 class="hero__title">Designing spaces<br>that feel like <em>you</em>.</h1>
         <p class="hero__lede">I'm Rocío Fuhrmeister — an interior designer helping homeowners and businesses turn ordinary rooms into warm, functional spaces they love to live and work in.</p>
         <div class="hero__cta">
-          <a class="btn btn--solid" href="#work">View the work</a>
+          <a class="btn btn--solid" href="#work">View the gallery</a>
           <a class="btn btn--ghost" href="#contact">Book a consultation</a>
         </div>
         <p class="hero__meta">Kitchens · Baths · Whole-home · Commercial</p>
@@ -276,7 +273,6 @@ HTML = f'''<!doctype html>
   <section class="studio section" id="studio">
     <div class="wrap studio__grid">
       <div class="studio__media reveal">
-        <img class="studio__room" data-img="{ABOUT_IMG}" alt="A warm dining room designed by Rocío">
         <img class="studio__portrait" data-img="{PORTRAIT}" alt="Portrait of Rocío Fuhrmeister">
       </div>
       <div class="studio__copy reveal">
@@ -328,7 +324,7 @@ HTML = f'''<!doctype html>
   <section class="work section" id="work">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Selected work</span>
+        <span class="eyebrow">Gallery</span>
         <h2 class="h-section">Recent projects</h2>
         <p class="section-head__lede">A few of the spaces that have deepened my love for this work. Tap any project to see the story and full gallery.</p>
       </div>
@@ -382,7 +378,7 @@ HTML = f'''<!doctype html>
   <div class="wrap foot__row">
     <div class="foot__brand"><b>Rocío Fuhrmeister</b><span>Interior Design</span></div>
     <nav class="foot__nav" aria-label="Footer">
-      <a href="#work">Work</a><a href="#studio">Studio</a><a href="#services">Services</a>
+      <a href="#studio">Studio</a><a href="#work">Gallery</a><a href="#services">Services</a>
       <a href="#process">Process</a><a href="#contact">Contact</a>
     </nav>
     <p class="foot__copy">© <span id="yr"></span> Rocío Fuhrmeister · Interior Design</p>
