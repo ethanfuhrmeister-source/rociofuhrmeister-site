@@ -71,8 +71,8 @@ after-only galleries.
 - **Contact form uses `mailto:`** (opens the visitor's email client). For real inbox
   delivery, wire it to a backend like Formspree/Basin and update the submit handler in
   `script.js`.
-- **Master Bath "after" images are renderings**, not photos — the slider is labeled
-  "After (rendering)" on purpose; keep that honest if editing.
+- **Master Bath "after" images are real photos, not renderings** (client confirmed
+  2026-07-21). Labels are plain "After" — do NOT reintroduce an "After (rendering)" tag.
 - **Curation**: 61 of the 104 images are embedded for weight/polish. All 104 originals
   remain in `assets_original/` to swap in.
 
