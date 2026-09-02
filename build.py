@@ -300,6 +300,7 @@ HTML = f'''<!doctype html>
         <p class="section-head__lede">Full projects or a single room — here's where I most often step in.</p>
       </div>
       <div class="svc-grid">
+        <div class="svc svc--lead reveal"><h3>Consultation</h3><p>Start here — a 90-minute session to walk your space, talk through what's working and what isn't, and map out the possibilities. <span class="price">90 minutes · $125</span></p></div>
         <div class="svc reveal"><h3>Full-Home Design</h3><p>From layout to the last cushion, one cohesive plan for your whole home. Ideal for new builds, fresh starts, and homes ready for a head-to-toe transformation.</p></div>
         <div class="svc reveal"><h3>Single-Room Refresh</h3><p>One room, reimagined. Perfect when a living room, bedroom, or nursery needs new life without a full renovation.</p></div>
         <div class="svc reveal"><h3>Kitchen &amp; Bath Renovation</h3><p>The rooms that work hardest, redesigned for how you actually live — smarter layouts, lasting materials, and finishes that feel timeless.</p></div>

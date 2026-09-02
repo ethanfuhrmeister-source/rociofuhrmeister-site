@@ -86,6 +86,8 @@ a{color:inherit;text-decoration:none}
 .section-head{max-width:44ch;margin-bottom:clamp(2.5rem,5vw,3.8rem)}
 .section-head__lede{color:var(--muted);margin-top:.9rem}
 .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
+.svc--lead{grid-column:1/-1;border-color:var(--brass)}
+.svc--lead .price{color:var(--brass);font-weight:500;white-space:nowrap}
 .svc{background:var(--card);border:1px solid var(--line);padding:2.2rem 2rem;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
 .svc:hover{transform:translateY(-4px);box-shadow:0 26px 50px -34px rgba(42,37,31,.5)}
 .svc h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin:0 0 .6rem;position:relative;padding-bottom:.8rem}
