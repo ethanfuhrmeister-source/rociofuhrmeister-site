@@ -224,8 +224,8 @@ HTML = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rocío Fuhrmeister — Interior Design</title>
-<meta name="description" content="Rocío Fuhrmeister is an interior designer creating warm, functional residential and commercial spaces — kitchens, baths, whole-home design, and offices.">
+<title>Rocío Home Refresh — Interior Design</title>
+<meta name="description" content="Rocío Home Refresh — interior design, home organization, and styling by Rocío Fuhrmeister, creating warm, functional residential and commercial spaces: kitchens, baths, whole-home design, and offices.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -236,9 +236,9 @@ HTML = f'''<!doctype html>
 
 <header class="nav" id="nav">
   <div class="wrap nav__row">
-    <a class="brand" href="#top" aria-label="Rocío Fuhrmeister, Interior Design — home">
-      <span class="brand__mark">RF</span>
-      <span class="brand__txt"><b>Rocío Fuhrmeister</b><i>Interior Design</i></span>
+    <a class="brand" href="#top" aria-label="Rocío Home Refresh, Interior Design — home">
+      <span class="brand__mark">RH</span>
+      <span class="brand__txt"><b>Rocío Home Refresh</b><i>Interior Design</i></span>
     </a>
     <nav class="nav__links" aria-label="Primary">
       <a href="#studio">Studio</a>
@@ -385,12 +385,12 @@ HTML = f'''<!doctype html>
 
 <footer class="foot">
   <div class="wrap foot__row">
-    <div class="foot__brand"><b>Rocío Fuhrmeister</b><span>Interior Design</span></div>
+    <div class="foot__brand"><b>Rocío Home Refresh</b><span>Interior Design</span></div>
     <nav class="foot__nav" aria-label="Footer">
       <a href="#studio">Studio</a><a href="#work">Gallery</a><a href="#services">Services</a>
       <a href="#process">Process</a><a href="#contact">Contact</a>
     </nav>
-    <p class="foot__copy">© <span id="yr"></span> Rocío Fuhrmeister · Interior Design</p>
+    <p class="foot__copy">© <span id="yr"></span> Rocío Home Refresh · Interior Design</p>
   </div>
 </footer>
 
