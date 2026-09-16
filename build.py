@@ -67,7 +67,7 @@ PROJECTS=[
 
  dict(id="new-beginnings", title="New Beginnings",
    cat="Residential · Apartment",
-   cover="f8047d01-936a-4868-bf79-532ec98a5af7_1_orig.jpg",
+   cover="5eb812c5-a944-4346-bfba-d1324741112e_1_orig.jpg",
    ba=None,
    story=["This project was about helping a mother and her young daughter create a real sense of home during a major life transition. The goal was a space that felt safe, grounding, and full of warmth.",
      "The design leaned into comfort and calm: soft textures, a soothing palette, and furniture that balanced function with emotional ease. Natural light was emphasized to keep the apartment open and nurturing, while styling details added personality and a lived-in sense of belonging.",
