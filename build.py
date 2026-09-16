@@ -300,12 +300,14 @@ HTML = f'''<!doctype html>
         <p class="section-head__lede">Full projects or a single room — here's where I most often step in.</p>
       </div>
       <div class="svc-grid">
-        <div class="svc svc--lead reveal"><h3>Consultation</h3><p>Start here — a 90-minute session to walk your space, talk through what's working and what isn't, and map out the possibilities. <span class="price">90 minutes · $125</span></p></div>
-        <div class="svc reveal"><h3>Full-Home Design</h3><p>From layout to the last cushion, one cohesive plan for your whole home. Ideal for new builds, fresh starts, and homes ready for a head-to-toe transformation.</p></div>
-        <div class="svc reveal"><h3>Single-Room Refresh</h3><p>One room, reimagined. Perfect when a living room, bedroom, or nursery needs new life without a full renovation.</p></div>
-        <div class="svc reveal"><h3>Kitchen &amp; Bath Renovation</h3><p>The rooms that work hardest, redesigned for how you actually live — smarter layouts, lasting materials, and finishes that feel timeless.</p></div>
-        <div class="svc reveal"><h3>Commercial &amp; Office</h3><p>Lobbies, offices, and workspaces that make the right first impression and reflect your brand — functional, polished, and welcoming.</p></div>
+        <div class="svc svc--lead reveal"><h3>Home Refresh Consultation</h3><p>A personalized in-home consultation to help you see your space differently — space assessment, furniture and layout ideas, color and décor direction, and clear next steps. <span class="price">90 minutes · $125</span></p></div>
+        <div class="svc reveal"><h3>Home Organization &amp; Styling</h3><p>Decluttering, organizing, and styling that make a space both beautiful and functional — smart storage and systems built around how you actually live.</p></div>
+        <div class="svc reveal"><h3>Room Refresh</h3><p>A fresh new look for a room you already have — design concept, furniture layout, color, styling, and a mood board with a shopping list to pull it together.</p></div>
+        <div class="svc reveal"><h3>Room Transformation</h3><p>A comprehensive redesign to completely transform a space — space planning, finishes, furniture and décor, styling, and full shopping and sourcing guidance.</p></div>
+        <div class="svc reveal"><h3>Kitchen Design</h3><p>For kitchens that need better function or a complete refresh — layout, cabinetry, countertops, backsplash, lighting, finishes, and product sourcing.</p></div>
+        <div class="svc reveal"><h3>Shopping &amp; Sourcing</h3><p>Help finding the right pieces — furniture, lighting, rugs, art, accessories, hardware, and décor, selected to fit your space and style.</p></div>
       </div>
+      <p class="svc-tagline reveal">Let's create a space you love coming home to.</p>
     </div>
   </section>
 
