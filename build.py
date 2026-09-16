@@ -247,6 +247,8 @@ HTML = f'''<!doctype html>
     <nav class="nav__links" aria-label="Primary">
       <a href="#studio">Studio</a>
       <a href="#work">Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
       <a class="nav__cta" href="#contact">Get in touch</a>
     </nav>
     <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -254,7 +256,7 @@ HTML = f'''<!doctype html>
 </header>
 <div class="menu" id="menu" hidden>
   <nav aria-label="Mobile">
-    <a href="#studio">Studio</a><a href="#work">Gallery</a><a href="#contact">Get in touch</a>
+    <a href="#studio">Studio</a><a href="#work">Gallery</a><a href="#services">Services</a><a href="#process">Process</a><a href="#contact">Get in touch</a>
   </nav>
 </div>
 
