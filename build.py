@@ -224,7 +224,7 @@ HTML = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rocío Home Refresh — Interior Design</title>
+<title>Rocío Home Refresh — Interior Design + Home Organization</title>
 <meta name="description" content="Rocío Home Refresh — interior design, home organization, and styling by Rocío Fuhrmeister, creating warm, functional residential and commercial spaces: kitchens, baths, whole-home design, and offices.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -236,9 +236,9 @@ HTML = f'''<!doctype html>
 
 <header class="nav" id="nav">
   <div class="wrap nav__row">
-    <a class="brand" href="#top" aria-label="Rocío Home Refresh, Interior Design — home">
+    <a class="brand" href="#top" aria-label="Rocío Home Refresh, Interior Design and Home Organization — home">
       <span class="brand__mark">RH</span>
-      <span class="brand__txt"><b>Rocío Home Refresh</b><i>Interior Design</i></span>
+      <span class="brand__txt"><b>Rocío Home Refresh</b><i>Interior Design + Home Organization</i></span>
     </a>
     <nav class="nav__links" aria-label="Primary">
       <a href="#studio">Studio</a>
@@ -259,8 +259,8 @@ HTML = f'''<!doctype html>
   <section class="hero">
     <div class="wrap hero__grid">
       <div class="hero__copy">
-        <span class="eyebrow">Interior Design · Residential &amp; Commercial</span>
-        <h1 class="hero__title">Designing spaces<br>that feel like <em>you</em>.</h1>
+        <span class="eyebrow">Rocío Home Refresh · Interior Design + Home Organization</span>
+        <h1 class="hero__title">Creating beautiful, functional<br>spaces that feel like <em>you</em>.</h1>
         <p class="hero__lede">I'm Rocío Fuhrmeister — an interior designer helping homeowners and businesses turn ordinary rooms into warm, functional spaces they love to live and work in.</p>
         <div class="hero__cta">
           <a class="btn btn--solid" href="#work">View the gallery</a>
@@ -304,7 +304,7 @@ HTML = f'''<!doctype html>
         <div class="svc reveal"><h3>Home Organization &amp; Styling</h3><p>Decluttering, organizing, and styling that make a space both beautiful and functional — smart storage and systems built around how you actually live.</p></div>
         <div class="svc reveal"><h3>Room Refresh</h3><p>A fresh new look for a room you already have — design concept, furniture layout, color, styling, and a mood board with a shopping list to pull it together.</p></div>
         <div class="svc reveal"><h3>Room Transformation</h3><p>A comprehensive redesign to completely transform a space — space planning, finishes, furniture and décor, styling, and full shopping and sourcing guidance.</p></div>
-        <div class="svc reveal"><h3>Kitchen Design</h3><p>For kitchens that need better function or a complete refresh — layout, cabinetry, countertops, backsplash, lighting, finishes, and product sourcing.</p></div>
+        <div class="svc reveal"><h3>Kitchen Design</h3><p>For kitchens that need better function or a complete refresh — layout, cabinetry, countertops, backsplash, lighting, finishes, and product sourcing.</p><p class="svc-note">Full kitchen projects are individually quoted.</p></div>
         <div class="svc reveal"><h3>Shopping &amp; Sourcing</h3><p>Help finding the right pieces — furniture, lighting, rugs, art, accessories, hardware, and décor, selected to fit your space and style.</p></div>
       </div>
       <p class="svc-tagline reveal">Let's create a space you love coming home to.</p>
@@ -385,7 +385,7 @@ HTML = f'''<!doctype html>
 
 <footer class="foot">
   <div class="wrap foot__row">
-    <div class="foot__brand"><b>Rocío Home Refresh</b><span>Interior Design</span></div>
+    <div class="foot__brand"><b>Rocío Home Refresh</b><span>Interior Design + Home Organization</span></div>
     <nav class="foot__nav" aria-label="Footer">
       <a href="#studio">Studio</a><a href="#work">Gallery</a><a href="#services">Services</a>
       <a href="#process">Process</a><a href="#contact">Contact</a>
