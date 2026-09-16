@@ -79,7 +79,7 @@ PROJECTS=[
 
  dict(id="compact-45", title="Designing Within 45m²",
    cat="Residential · Small Space · Colombia",
-   cover="10_orig.jpg",
+   cover="img-8623_orig.jpeg",
    ba=None,
    story=["This 45-square-meter (about 484 sq ft) apartment in Colombia showed just how much is possible in a small footprint. The client wanted a home that felt open and welcoming, with clever storage to make the most of every meter.",
      "The plan prioritized natural light, multifunctional furniture, and built-in storage — efficiency without giving up style. Careful layout and the right pieces made the apartment feel far larger than its square footage.",
@@ -122,7 +122,7 @@ PROJECTS=[
 
  dict(id="asheville", title="Modern Functionality in Asheville",
    cat="Residential · Kitchen · Asheville, NC",
-   cover="img-5401_orig.jpeg",
+   cover="img-5399_orig.jpeg",
    ba=None,
    story=["This kitchen renovation was about modernizing a dated space and making it work harder day to day — more storage, a smarter layout, and a warm, contemporary feel.",
      "We extended the kitchen for more usable space and added a built-in bench with hidden storage for seating and practicality. Reconfigured cabinetry maximized capacity while keeping clean lines, and a mix of closed storage and open shelving added flexibility and warmth. Natural wood tones paired with crisp, light finishes kept everything fresh and open.",
