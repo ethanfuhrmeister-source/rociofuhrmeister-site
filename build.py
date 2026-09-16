@@ -208,7 +208,7 @@ def modal(p):
 cards="\n".join(card(p) for p in PROJECTS)
 modals="\n".join(modal(p) for p in PROJECTS)
 
-HERO=reg("img-5396_orig.jpeg","h")
+HERO=reg("abue2_orig.jpg","h")
 PORTRAIT=reg("facetune_orig.png","q")
 ABOUT_IMG=reg("finish-dining-room_1_orig.png")
 import json as _json
@@ -269,7 +269,7 @@ HTML = f'''<!doctype html>
         <p class="hero__meta">Kitchens · Baths · Whole-home · Commercial</p>
       </div>
       <div class="hero__media">
-        <div class="hero__frame"><img data-img="{HERO}" alt="A bright kitchen and dining room designed by Rocío Fuhrmeister"></div>
+        <div class="hero__frame"><img data-img="{HERO}" alt="A kitchen with a navy island designed by Rocío Fuhrmeister"></div>
       </div>
     </div>
   </section>
