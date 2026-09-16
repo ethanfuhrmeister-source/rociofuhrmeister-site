@@ -208,6 +208,11 @@ def modal(p):
 cards="\n".join(card(p) for p in PROJECTS)
 modals="\n".join(modal(p) for p in PROJECTS)
 
+def png_uri(fn):
+    with open(os.path.join(SRC,fn),"rb") as f:
+        return "data:image/png;base64,"+base64.b64encode(f.read()).decode()
+LOGO=png_uri("rhr-logo.png")
+
 HERO=reg("abue2_orig.jpg","h")
 PORTRAIT=reg("facetune_orig.png","q")
 ABOUT_IMG=reg("finish-dining-room_1_orig.png")
@@ -237,8 +242,7 @@ HTML = f'''<!doctype html>
 <header class="nav" id="nav">
   <div class="wrap nav__row">
     <a class="brand" href="#top" aria-label="Rocío Home Refresh, Interior Design and Home Organization — home">
-      <span class="brand__mark">RH</span>
-      <span class="brand__txt"><b>Rocío Home Refresh</b><i>Interior Design + Home Organization</i></span>
+      <img class="brand__logo" src="{LOGO}" alt="Rocío Home Refresh" width="460" height="338">
     </a>
     <nav class="nav__links" aria-label="Primary">
       <a href="#studio">Studio</a>
