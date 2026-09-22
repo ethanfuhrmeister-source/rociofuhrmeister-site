@@ -103,16 +103,33 @@
     });
   }
 
-  // ---- CONTACT FORM (mailto fallback) ----
+  // ---- CONTACT FORM ----
+  // Paste your Zapier "Catch Hook" webhook URL between the quotes to enable
+  // real delivery (Zap sends an SMS text to Rocío + optional Google Sheet log).
+  // While empty, the form falls back to opening the visitor's email app.
+  var FORM_ENDPOINT='';
   var form=$('#contactForm'), note=$('#formNote');
   form.addEventListener('submit',function(e){
     e.preventDefault();
     var name=$('#cf-name').value.trim(), email=$('#cf-email').value.trim(),
         type=$('#cf-type').value, msg=$('#cf-msg').value.trim();
     if(!name||!email||!msg){ note.textContent='Please add your name, email, and a note.'; return; }
-    var subject=encodeURIComponent('Project inquiry — '+name+' ('+type+')');
-    var body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nProject type: '+type+'\n\n'+msg);
-    window.location.href='mailto:zurcfuhrmeister@gmail.com?subject='+subject+'&body='+body;
-    note.textContent='Opening your email app… if nothing happens, email zurcfuhrmeister@gmail.com directly.';
+    if(!FORM_ENDPOINT){
+      var subject=encodeURIComponent('Project inquiry — '+name+' ('+type+')');
+      var body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nProject type: '+type+'\n\n'+msg);
+      window.location.href='mailto:zurcfuhrmeister@gmail.com?subject='+subject+'&body='+body;
+      note.textContent='Opening your email app… if nothing happens, email zurcfuhrmeister@gmail.com directly.';
+      return;
+    }
+    var btn=form.querySelector('button[type=submit]');
+    note.textContent='Sending…'; if(btn){ btn.disabled=true; }
+    var params=new URLSearchParams({name:name,email:email,type:type,message:msg,
+      source:'rociohomerefresh website'});
+    fetch(FORM_ENDPOINT,{method:'POST',mode:'no-cors',
+      headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},
+      body:params.toString()})
+      .then(function(){ form.reset(); note.textContent='Thank you — your message is on its way to Rocío. She’ll be in touch soon.'; })
+      .catch(function(){ note.textContent='Sorry — something went wrong sending your message. Please email zurcfuhrmeister@gmail.com directly.'; })
+      .finally(function(){ if(btn){ btn.disabled=false; } });
   });
 })();
