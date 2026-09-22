@@ -374,7 +374,14 @@ HTML = f'''<!doctype html>
       </div>
       <form class="contact__form reveal" id="contactForm" novalidate>
         <div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" autocomplete="name" required></div>
-        <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><span class="field__lbl">How should Rocío reach you?</span>
+          <div class="segmented" role="radiogroup" aria-label="Preferred contact method">
+            <label class="seg"><input type="radio" name="contactpref" value="Email" checked><span>Email</span></label>
+            <label class="seg"><input type="radio" name="contactpref" value="Call / Text"><span>Call / Text</span></label>
+          </div>
+        </div>
+        <div class="field" id="field-email"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email"></div>
+        <div class="field" id="field-phone" hidden><label for="cf-phone">Phone</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel"></div>
         <div class="field"><label for="cf-type">Project type</label>
           <select id="cf-type" name="type">
             <option>Home Refresh Consultation</option><option>Home Organization &amp; Styling</option>

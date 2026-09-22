@@ -149,6 +149,13 @@ a{color:inherit;text-decoration:none}
   background:var(--paper);border:1px solid var(--line);padding:.8rem .9rem;border-radius:4px;width:100%}
 .field textarea{resize:vertical}
 .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--brass);outline-offset:0;border-color:var(--brass)}
+.field__lbl{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.segmented{display:flex;gap:.5rem}
+.seg{flex:1;position:relative;margin:0}
+.seg input{position:absolute;inset:0;width:100%;height:100%;margin:0;padding:0;opacity:0;border:0;cursor:pointer}
+.seg span{display:block;text-align:center;padding:.72rem .5rem;border:1px solid var(--line);border-radius:4px;background:var(--paper);font-size:.92rem;color:var(--muted);transition:background .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease)}
+.seg input:checked+span{border-color:var(--brass);background:var(--brass);color:#fff}
+.seg input:focus-visible+span{outline:2px solid var(--brass);outline-offset:2px}
 .contact__form .btn{width:100%;text-align:center;margin-top:.4rem}
 .form-note{font-size:.9rem;color:var(--olive);margin:.9rem 0 0;min-height:1.2em}
 
@@ -206,7 +213,7 @@ a{color:inherit;text-decoration:none}
 .lightbox__close{position:absolute;top:1.2rem;right:1.4rem;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer;line-height:1}
 
 /* hidden attribute must win over the display rules above */
-.menu[hidden],.overlay[hidden],.lightbox[hidden]{display:none}
+.menu[hidden],.overlay[hidden],.lightbox[hidden],.field[hidden]{display:none}
 
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
@@ -448,7 +455,14 @@ body.noscroll{overflow:hidden}
       </div>
       <form class="contact__form reveal" id="contactForm" novalidate>
         <div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" autocomplete="name" required></div>
-        <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><span class="field__lbl">How should Rocío reach you?</span>
+          <div class="segmented" role="radiogroup" aria-label="Preferred contact method">
+            <label class="seg"><input type="radio" name="contactpref" value="Email" checked><span>Email</span></label>
+            <label class="seg"><input type="radio" name="contactpref" value="Call / Text"><span>Call / Text</span></label>
+          </div>
+        </div>
+        <div class="field" id="field-email"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email"></div>
+        <div class="field" id="field-phone" hidden><label for="cf-phone">Phone</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel"></div>
         <div class="field"><label for="cf-type">Project type</label>
           <select id="cf-type" name="type">
             <option>Home Refresh Consultation</option><option>Home Organization &amp; Styling</option>
@@ -839,26 +853,35 @@ body.noscroll{overflow:hidden}
   // While empty, the form falls back to opening the visitor's email app.
   var FORM_ENDPOINT='https://hooks.zapier.com/hooks/catch/28252800/4dpqtys/';
   var form=$('#contactForm'), note=$('#formNote');
+  // Preferred-contact toggle: show only the field they choose
+  var fEmail=$('#field-email'), fPhone=$('#field-phone');
+  function pref(){ var r=form.querySelector('input[name=contactpref]:checked'); return r?r.value:'Email'; }
+  function syncPref(){ var call=pref()==='Call / Text'; if(fEmail){fEmail.hidden=call;} if(fPhone){fPhone.hidden=!call;} }
+  $$('input[name=contactpref]',form).forEach(function(r){ r.addEventListener('change',syncPref); });
+  syncPref();
   form.addEventListener('submit',function(e){
     e.preventDefault();
-    var name=$('#cf-name').value.trim(), email=$('#cf-email').value.trim(),
-        type=$('#cf-type').value, msg=$('#cf-msg').value.trim();
-    if(!name||!email||!msg){ note.textContent='Please add your name, email, and a note.'; return; }
+    var name=$('#cf-name').value.trim(), type=$('#cf-type').value, msg=$('#cf-msg').value.trim();
+    var p=pref(), email=$('#cf-email').value.trim(), phone=$('#cf-phone').value.trim(), contact;
+    if(!name){ note.textContent='Please add your name.'; return; }
+    if(p==='Call / Text'){ if(!phone){ note.textContent='Please add a phone number so Rocío can reach you.'; return; } contact=phone; }
+    else { if(!email){ note.textContent='Please add your email so Rocío can reach you.'; return; } contact=email; }
+    if(!msg){ note.textContent='Please add a short note about your project.'; return; }
     if(!FORM_ENDPOINT){
       var subject=encodeURIComponent('Project inquiry — '+name+' ('+type+')');
-      var body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nProject type: '+type+'\n\n'+msg);
+      var body=encodeURIComponent('Name: '+name+'\nPreferred contact: '+p+'\n'+(p==='Call / Text'?'Phone: '+phone:'Email: '+email)+'\nProject type: '+type+'\n\n'+msg);
       window.location.href='mailto:zurcfuhrmeister@gmail.com?subject='+subject+'&body='+body;
       note.textContent='Opening your email app… if nothing happens, email zurcfuhrmeister@gmail.com directly.';
       return;
     }
     var btn=form.querySelector('button[type=submit]');
     note.textContent='Sending…'; if(btn){ btn.disabled=true; }
-    var params=new URLSearchParams({name:name,email:email,type:type,message:msg,
-      source:'rociohomerefresh website'});
+    var params=new URLSearchParams({name:name,preferred:p,email:email,phone:phone,contact:contact,
+      type:type,message:msg,source:'rociohomerefresh website'});
     fetch(FORM_ENDPOINT,{method:'POST',mode:'no-cors',
       headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},
       body:params.toString()})
-      .then(function(){ form.reset(); note.textContent='Thank you — your message is on its way to Rocío. She’ll be in touch soon.'; })
+      .then(function(){ form.reset(); syncPref(); note.textContent='Thank you — your message is on its way to Rocío. She’ll be in touch soon.'; })
       .catch(function(){ note.textContent='Sorry — something went wrong sending your message. Please email zurcfuhrmeister@gmail.com directly.'; })
       .finally(function(){ if(btn){ btn.disabled=false; } });
   });
